@@ -24,7 +24,9 @@ The Korean introduction is above, and the English introduction follows below.
 # 프로젝트 진행
 ### 데이터 전처리
  첫 번째 데이터는 자치구별 도서관 수, 좌석 수, 자료 수, 도서관 방문자 수, 자료실 이용자 수, 연간 대출 책 수, 직원 수, 예산 등의 도서관 운영 데이터를 포함하였다. 두 번째 데이터는 자치구별 부동산 실거래가 정보를 정리하여 지역별 부동산 시장 동향을 파악하고, 세 번째 데이터는 자치구별 사설학원 및 독서실 수를 정리하여 교육 및 학습 관련 인프라 현황을 분석하였다.
-![image](https://github.com/user-attachments/assets/c7a70e5d-5437-4d7a-b442-39d9c154f92e)
+ 
+![image](https://github.com/user-attachments/assets/c7a70e5d-5437-4d7a-b442-39d9c154f92e)'
+
 ![image](https://github.com/user-attachments/assets/b84a52d3-575a-4f3e-9555-75f30b80e18b)
 
 
@@ -36,21 +38,27 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 #각 구별로 2018년부터 2022년까지의 도서관 수
+
 library_count=pd.read_csv('library_count.csv')
 
 #각 구별로 2018년부터 2022년까지의 도서관 이용자 수
+
 library_people=pd.read_csv('library_people.csv')
 
 #각 구별로 2018년부터 2022년까지의 도서관 자료 수
+
 library_books=pd.read_csv('library_books.csv')
 
 #각 구별로 2018년부터 2022년까지의 도서관 좌석 수
+
 library_seat=pd.read_csv('library_seat.csv')
 
 #각 구별로 2018년부터 2022년까지의 학원 및 독서실 수
+
 academy=pd.read_csv('academy.csv')
 
 #각 구별로 2018년부터 2022년까지의 부동산 거래 정보
+
 home=pd.read_csv('home.csv')
 
 ### 데이터 분석 방법
@@ -58,15 +66,25 @@ home=pd.read_csv('home.csv')
 상관관계 분석을 통해 각 자료들어 서로 어떠한 상관관계가 있는지 알아보았다
 
 #도서관 수 & 도서관 이용자 수
+
 #도서관 수 & 도서관 좌석수
+
 #도서관 수 & 부동산 거래가
+
 #도서관 자료 수 & 도서관 이용자 수
+
 #도서관 자료 수 & 근처 학원 수 
+
 #도서관 좌석수 & 도서관 이용자 수
+
 #도서관 자료수 & 근처 학원 수
+
 #도서관 이용자 수 & 도서관 좌석 수 
+
 #도서관 이용자 수 & 근처 학원 수 
+
 #도서관 이용자 수 & 부동산 거래가
+
 
 ### 데이터 분석 결과
 ![image](https://github.com/user-attachments/assets/df4cd2d5-67bc-4457-babb-6f6115c29a42)
@@ -75,6 +93,7 @@ home=pd.read_csv('home.csv')
 
 # 결과 분석
  프로젝트를 진행하면서 도서관의 규모가 큰 지역의 경제적 수준은 높을 것이라고 생각하였다. 지역의 경제적 수준이 높은만큼 도서관 및 다양한 문화시설을 이용하는 이용자 수가 비례할 것이라고 생각했기 때문이다. 하지만 도서관의 규모와 지역의 경제적 수준은 관련이 없었다.
+ 
 ![image](https://github.com/user-attachments/assets/3875433e-707a-469e-a2c2-df6c1955bbe9)
 
 추가적인 논문을 찾아보았다. 경제요인이 도서관 이용에 어떤 영향을 미치는지 알 수 있었다. "소비자들은 소득이 증가할수록 대출보다 책을 구입하는 선택을 더 선호한다고 할 수 있다." 따라서 책을 구입함으로서 도서관의 이용자 수를 늘리는 정책은 바르지 못할 수 있다는 것이 이 프로젝트의 결론이다.
@@ -104,7 +123,9 @@ The data used in this project was sourced from the 'Public Data Portal' (https:/
 # Project Progress
 ### Data Preprocessing
 The first dataset includes data on the number of libraries, seats, books, library visitors, reading room users, annual book loans, staff, and budgets by district. The second dataset focuses on real estate transaction prices by district, and the third dataset includes the number of private academies and study rooms, which allows for the analysis of educational infrastructure.
+
 ![image](https://github.com/user-attachments/assets/c7a70e5d-5437-4d7a-b442-39d9c154f92e)
+
 ![image](https://github.com/user-attachments/assets/b84a52d3-575a-4f3e-9555-75f30b80e18b)
 
 ### Preprocessed Data
@@ -115,36 +136,53 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 #Data for the number of libraries by district from 2018 to 2022
+
 library_count=pd.read_csv('library_count.csv')
 
 #Data for library visitors by district from 2018 to 2022
+
 library_people=pd.read_csv('library_people.csv')
 
 #Data for library book collection by district from 2018 to 2022
+
 library_books=pd.read_csv('library_books.csv')
 
 #Data for library seats by district from 2018 to 2022
+
 library_seat=pd.read_csv('library_seat.csv')
 
 #Data for private academies and study rooms by district from 2018 to 2022
+
 academy=pd.read_csv('academy.csv')
 
 #Real estate transaction data by district
+
 home=pd.read_csv('home.csv')
+
 
 ### Data Analysis Method
 We conducted a correlation analysis to examine the relationships between various data points.
 
 #Number of libraries & Library visitors
+
 #Number of libraries & Library seats
+
 #Number of libraries & Real estate transaction prices
+
 #Library books & Library visitors
+
 #Library books & Nearby academy numbers
+
 #Library seats & Library visitors
+
 #Library books & Nearby academy numbers
+
 #Library visitors & Library seats
+
 #Library visitors & Nearby academy numbers
+
 #Library visitors & Real estate transaction prices
+
 
 ### Data Analysis Results
 ![image](https://github.com/user-attachments/assets/2a98201a-8e5c-480b-b3e7-62311bebb385)
